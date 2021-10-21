@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -17,33 +20,35 @@
     <!--Главный хедер-->
     <header class="site-header">
         <!--Меню навигации-->
-        <nav class="nav">
-
-            <a href="/" class="site-logo"><span>Web</span>Studio</a>
-
-            <ul class="site-nav list">
-                <li>
-                    <a href="" class="link current">Студия</a>
-                </li>
-                <li>
-                    <a href="./portfolio.html" class="link">Портфолио</a>
-                </li>
-                <li>
-                    <a href="" class="link">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <!--Контакты в меню-->
-        <address>
-            <ul class="header-links list">
-                <li>
-                    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+        <div class="section">
+            <nav class="nav">
+            
+                <a href="/" class="site-logo"><span>Web</span>Studio</a>
+            
+                <ul class="site-nav list">
+                    <li>
+                        <a href="" class="link current">Студия</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="link">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="" class="link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--Контакты в меню-->
+            <address>
+                <ul class="header-links list">
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
 
     </header>
 
@@ -57,70 +62,76 @@
 
         <!--Преимущества-->
         <section class="section-advant">
-            <h2 class="section-title">Преимущества</h2>
-            <ul class="list advant">
-                <li>
-                    <h3 class="subtitle">Внимание к деталям</h3>
-                    <p class="descript">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li>
-                    <h3 class="subtitle">Пунктуальность</h3>
-                    <p class="descript">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li>
-                    <h3 class="subtitle">Планирование</h3>
-                    <p class="descript">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li>
-                    <h3 class="subtitle">Современные технологии</h3>
-                    <p class="descript">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+            <div class="section">
+                <h2 class="section-title">Преимущества</h2>
+                <ul class="list advant">
+                    <li>
+                        <h3 class="subtitle">Внимание к деталям</h3>
+                        <p class="descript">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li>
+                        <h3 class="subtitle">Пунктуальность</h3>
+                        <p class="descript">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li>
+                        <h3 class="subtitle">Планирование</h3>
+                        <p class="descript">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li>
+                        <h3 class="subtitle">Современные технологии</h3>
+                        <p class="descript">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!--Чем мы занимаемся-->
         <section class="section-works">
-            <h2 class="section-title">Чем мы занимаемся</h2>
-
-            <ul class="list">
-                <li>
-                    <img src="./images/box1.jpg" width="370" alt="Рабочий стол с клавиатурой" />
-                </li>
-                <li>
-                    <img src="./images/box2.jpg" width="370" alt="Ноутбук с телефоном" />
-                </li>
-                <li>
-                    <img src="./images/box3.jpg" width="370" alt="Планшет с палитрой цветов" />
-                </li>
-            </ul>
+            <div class="section">
+                <h2 class="section-title">Чем мы занимаемся</h2>
+                
+                <ul class="list">
+                    <li>
+                        <img src="./images/box1.jpg" width="370" alt="Рабочий стол с клавиатурой" />
+                    </li>
+                    <li>
+                        <img src="./images/box2.jpg" width="370" alt="Ноутбук с телефоном" />
+                    </li>
+                    <li>
+                        <img src="./images/box3.jpg" width="370" alt="Планшет с палитрой цветов" />
+                    </li>
+                </ul>
+            </div>
 
         </section>
 
         <!--Наша команда-->
         <section class="section-comand">
-            <h2 class="section-title">Наша команда</h2>
-            <ul class="list">
-                <li>
-                    <img src="./images/img1.jpg" width="270" alt="Мужчина" />
-                    <h3 class="subtitle">Игорь Демьяненко</h3>
-                    <p class="descript">Product Designer</p>
-                </li>
-                <li>
-                    <img src="./images/img2.jpg" width="270" alt="Девушка" />
-                    <h3 class="subtitle">Ольга Репина</h3>
-                    <p class="descript">Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/img3.jpg" width="270" alt="Мужчина" />
-                    <h3 class="subtitle">Николай Тарасов</h3>
-                    <p class="descript">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/img4.jpg" width="270" alt="Мужчина" />
-                    <h3 class="subtitle">Михаил Ермаков</h3>
-                    <p class="descript">UI Designer</p>
-                </li>
-            </ul>
+            <div class="section">
+                <h2 class="section-title">Наша команда</h2>
+                <ul class="list">
+                    <li>
+                        <img src="./images/img1.jpg" width="270" alt="Мужчина" />
+                        <h3 class="subtitle">Игорь Демьяненко</h3>
+                        <p class="descript">Product Designer</p>
+                    </li>
+                    <li>
+                        <img src="./images/img2.jpg" width="270" alt="Девушка" />
+                        <h3 class="subtitle">Ольга Репина</h3>
+                        <p class="descript">Frontend Developer</p>
+                    </li>
+                    <li>
+                        <img src="./images/img3.jpg" width="270" alt="Мужчина" />
+                        <h3 class="subtitle">Николай Тарасов</h3>
+                        <p class="descript">Marketing</p>
+                    </li>
+                    <li>
+                        <img src="./images/img4.jpg" width="270" alt="Мужчина" />
+                        <h3 class="subtitle">Михаил Ермаков</h3>
+                        <p class="descript">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
