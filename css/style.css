@@ -17,6 +17,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* цвет основного текста #212121 */
 /* вторичный цвет текста #757575 */
 /* дополнительный цвет текста rgba(255, 255, 255, 0,6) */
@@ -28,6 +35,15 @@ body {
 
 .list {
   list-style: none;
+}
+
+.section {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 
 .site-logo {
@@ -80,10 +96,15 @@ body {
 /* секция герой */
 .section-hero {
   background-color: var(--second-text-color);
+  text-align: center;
 }
 
 .main-title {
   color: var(--bg-color);
+  margin-top: 0;
+  margin-bottom: 40px;
+  /* background-color: tomato; */
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3em;
@@ -93,8 +114,15 @@ body {
 }
 
 .hero-button {
+  display: inline-block;
   color: var(--bg-color);
   background-color: var(--akcent-color);
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  /* margin-bottom: 0; */
+
+  border-radius: 4px;
 
   font-size: 16px;
   font-family: inherit;
@@ -109,11 +137,16 @@ body {
 
 /* Секция преимуществ */
 .section-title {
-  font-weight: bold;
+  display: none;
+  /* font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; */
+}
+
+.subtitle {
+  margin-top: 0;
 }
 
 .section-advant .subtitle {
