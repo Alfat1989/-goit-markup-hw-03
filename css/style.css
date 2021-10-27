@@ -36,10 +36,14 @@ ul {
 
 .list {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .section {
   width: 1200px;
+
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -98,6 +102,7 @@ ul {
 .section-hero {
   background-color: var(--footer-bg-color);
   text-align: center;
+  padding: 200px 452px;
 }
 
 .main-title {
@@ -144,6 +149,7 @@ ul {
 /* Преимущества */
 .section-advant {
   margin-bottom: 0;
+  padding-top: 94px;
 }
 
 /* Секция преимуществ */
@@ -215,6 +221,8 @@ ul {
 /* Секция наша команда */
 .section-comand {
   background-color: var(--second-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .comand-img {
@@ -226,12 +234,13 @@ ul {
 .section-comand .descript {
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
 }
 
 .section-comand .descript {
   color: var(--second-text-color);
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .section-comand .subtitle {
