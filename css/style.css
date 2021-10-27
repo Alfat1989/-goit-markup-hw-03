@@ -96,7 +96,7 @@ ul {
 /* основной сайт */
 /* секция герой */
 .section-hero {
-  background-color: var(--second-text-color);
+  background-color: var(--footer-bg-color);
   text-align: center;
 }
 
@@ -136,22 +136,36 @@ ul {
   cursor: pointer;
 }
 
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+
+/* Преимущества */
 .section-advant {
-  background-color: gray;
   margin-bottom: 0;
 }
 
 /* Секция преимуществ */
-.section-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-title {
   margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
 }
 
 .section-advant .section-title {
@@ -169,8 +183,13 @@ ul {
   /* margin-top: 94px; */
   margin-bottom: 10px;
 }
+
 .list.advant .descript {
   margin-top: 0;
+}
+
+.list.advant .descript:last-child {
+  margin-bottom: 0;
 }
 
 .section-advant .subtitle {
@@ -311,4 +330,13 @@ ul {
 
 .footer-section .site-logo {
   color: var(--bg-color);
+}
+
+.link.footer-link:hover,
+.link.footer-link:focus {
+  color: var(--bg-color);
+}
+
+.footer-links:last-child {
+  margin-bottom: 0;
 }
