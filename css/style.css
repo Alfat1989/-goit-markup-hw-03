@@ -201,7 +201,6 @@ h3 {
   padding-bottom: 94px;
 }
 
-/* Секция преимуществ */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -216,15 +215,15 @@ h3 {
   overflow: hidden;
 }
 
-/* .advant-section {
-  display: flex;
-} */
-
 .advant {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+}
+
+.advant-descript {
+  flex-basis: calc((100% / 4) - 90px);
 }
 
 .advant-descript:not(:last-child) {
@@ -234,10 +233,6 @@ h3 {
 .advant-descript .subtitle {
   width: 270px;
 }
-
-/* .advant-descript .descript {
-  margin-bottom: 94px;
-} */
 
 .section-title {
   margin-bottom: 50px;
@@ -258,17 +253,8 @@ h3 {
 }
 
 .list.advant .subtitle {
-  /* margin-top: 94px; */
   margin-bottom: 10px;
 }
-
-/* .list.advant .descript {
-  margin-top: 0;
-} */
-
-/* .list.advant .descript:last-child {
-  margin-bottom: 0;
-} */
 
 .section-advant .subtitle {
   font-size: 14px;
