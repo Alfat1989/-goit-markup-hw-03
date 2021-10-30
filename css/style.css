@@ -147,7 +147,6 @@ h3 {
 /* основной сайт */
 /* секция герой */
 .section-hero {
-  width: 1600px;
   height: 600px;
   background-color: var(--footer-bg-color);
   text-align: center;
@@ -324,6 +323,7 @@ h3 {
 
 .list-comand {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
