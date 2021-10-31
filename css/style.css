@@ -47,6 +47,9 @@ a {
   padding: 0;
 }
 
+.site-header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
 .header-section {
   align-items: center;
 }
@@ -222,7 +225,7 @@ a {
 }
 
 .advant-descript {
-  max-width: calc((100%-90px) / 4);
+  max-width: 270px;
 }
 
 .advant-descript:not(:last-child) {
@@ -268,11 +271,7 @@ a {
 /* Секция Чем мы занимаемся */
 .section-works {
   margin: 0;
-  padding: 0;
-}
-
-.works {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
