@@ -20,7 +20,7 @@
     <!--Главный хедер-->
     <header class="site-header">
         <!--Меню навигации-->
-        <div class="section header-section">
+        <div class="container header-section">
             <nav class="nav">
             
                 <a class="site-logo" href="/"><span>Web</span>Studio</a>
@@ -38,7 +38,6 @@
                 </ul>
             </nav>
             <!--Контакты в меню-->
-            <address class="header-adress">
                 <ul class="header-links list">
                     <li class="contact-link">
                         <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -47,7 +46,7 @@
                         <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
-            </address>
+            
         </div>
 
     </header>
@@ -55,14 +54,16 @@
     <main>
         <!--Герой-->
         <section class="section-hero">
-            <h1 class="main-title">Эффективные решения <br>
-                для вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="main-title">Эффективные решения <br>
+                    для вашего бизнеса</h1>
+                <button type="button" class="hero-button">Заказать услугу</button>
+            </div>
         </section>
 
         <!--Преимущества-->
         <section class="section-advant">
-            <div class="section advant-section">
+            <div class="container advant-section">
                 <h2 class="section-title visually-hidden">Преимущества</h2>
                 <ul class="list advant">
 
@@ -92,7 +93,7 @@
 
         <!--Чем мы занимаемся-->
         <section class="section-works">
-            <div class="section works">
+            <div class="container works">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 
                 <ul class="works-list">
@@ -116,31 +117,40 @@
 
         <!--Наша команда-->
         <section class="section-comand">
-            <div class="section">
+            <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list-comand">
+
                     <li class="comand-item">
                         <img class="comand-img" src="./images/img1.jpg" width="270" alt="Мужчина" />
-                        <h3 class="subtitle">Игорь Демьяненко</h3>
-                        <p class="descript">Product Designer</p>
+                        <div class="item-container">
+                            <h3 class="subtitle">Игорь Демьяненко</h3>
+                            <p class="descript">Product Designer</p>
+                        </div>
                     </li>
 
                     <li class="comand-item">
                         <img class="comand-img" src="./images/img2.jpg" width="270" alt="Девушка" />
-                        <h3 class="subtitle">Ольга Репина</h3>
-                        <p class="descript">Frontend Developer</p>
+                        <div class="item-container">
+                            <h3 class="subtitle">Ольга Репина</h3>
+                            <p class="descript">Frontend Developer</p>
+                        </div>
                     </li>
 
                     <li class="comand-item">
                         <img class="comand-img" src="./images/img3.jpg" width="270" alt="Мужчина" />
-                        <h3 class="subtitle">Николай Тарасов</h3>
-                        <p class="descript">Marketing</p>
+                        <div class="item-container">
+                            <h3 class="subtitle">Николай Тарасов</h3>
+                            <p class="descript">Marketing</p>
+                        </div>
                     </li>
 
                     <li class="comand-item">
                         <img class="comand-img" src="./images/img4.jpg" width="270" alt="Мужчина" />
-                        <h3 class="subtitle">Михаил Ермаков</h3>
-                        <p class="descript">UI Designer</p>
+                        <div class="item-container">
+                            <h3 class="subtitle">Михаил Ермаков</h3>
+                            <p class="descript">UI Designer</p>
+                        </div>
                     </li>
                     
                 </ul>
@@ -149,14 +159,17 @@
     </main>
 
     <footer class="footer">
-        <div class="section">
+        <div class="container">
             <a class="site-logo footer-logo" href="/" ><span>Web</span>Studio</a>
             <address class="footer-discript">
             
                 <p class="footer-item">г. Киев, пр-т Леси Украинки, 26</p>
-                <p class="footer-item"><a href="" class="footer-link">info@example.com </a></p>
-                <p class="footer-item"><a href="" class="footer-link">+38 099 111 11 11 </a></p>
-            
+               
+                <a href="" class="footer-link">info@example.com</a>
+                   
+                <a href="" class="footer-link">+38 099 111 11 11</a>
+                
+                
             </address>
         </div>
     </footer>

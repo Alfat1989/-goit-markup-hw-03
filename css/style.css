@@ -18,13 +18,22 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+}
+
 h1,
 h2,
 h3,
 p,
-a {
+a,
+ul {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 /* цвет основного текста #212121 */
@@ -54,11 +63,11 @@ a {
   align-items: center;
 }
 
-.section {
+.container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 0;
+
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -163,22 +172,22 @@ a {
 }
 
 .section-hero {
-  height: 600px;
   background-color: var(--footer-bg-color);
   text-align: center;
-  padding: 200px 452px;
+  padding: 200px 0px;
 }
 
 .hero-button {
   display: inline-block;
-  color: var(--bg-color);
-  background-color: var(--akcent-color);
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
   /* margin-bottom: 0; */
 
   border-radius: 4px;
+
+  color: var(--bg-color);
+  background-color: var(--akcent-color);
 
   font-size: 16px;
   font-family: inherit;
@@ -268,7 +277,7 @@ a {
   line-height: 1.7em;
 }
 
-/* Секция Чем мы занимаемся */
+/* Чем мы занимаемся */
 .section-works {
   margin: 0;
   padding-bottom: 94px;
@@ -299,11 +308,7 @@ a {
   margin-top: 30px;
 }
 
-.works-img {
-  display: block;
-}
-
-/* Секция наша команда */
+/* Hаша команда */
 .section-comand {
   background-color: var(--second-bg-color);
   padding-top: 94px;
@@ -330,10 +335,9 @@ a {
   margin-right: 30px;
 }
 
-.comand-img {
+.item-container {
   display: block;
-  margin-top: 0;
-  margin-bottom: 30px;
+  padding: 30px 0;
 }
 
 .section-comand .subtitle,
@@ -345,15 +349,11 @@ a {
 
 .section-comand .descript {
   color: var(--second-text-color);
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .section-comand .subtitle {
-  margin-top: 0;
-  margin-bottom: 10px;
-
   font-weight: 500;
+  margin-bottom: 10px;
 }
 
 /* Футер */
@@ -381,7 +381,12 @@ a {
   margin-bottom: 9px;
 }
 
+.footer-link:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer-link {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
 
   text-decoration: none;
@@ -394,7 +399,7 @@ a {
 
 /* Секция портфолио */
 
-.section-portfolio {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -427,10 +432,6 @@ a {
   padding: 0;
 
   max-width: calc((100%-66px) / 3);
-}
-
-.portfolio-img {
-  display: block;
 }
 
 .descriopion-container {
@@ -483,16 +484,17 @@ a {
 }
 
 .portfolio {
-  text-decoration: none;
   margin: 0;
-  padding: 0;
+  padding: 94px 0;
+
+  text-decoration: none;
 }
 
 .portfolio .subtitle {
   margin-top: 0;
   margin-bottom: 4px;
 
-  line-height: 2em;
+  line-height: 2;
 }
 
 .portfolio .descript {
